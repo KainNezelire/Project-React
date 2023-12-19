@@ -1,0 +1,92 @@
+@media(max-width:768px){
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      
+      .line {
+        height: 4px;
+        width: 40px;
+        background-color: white;
+        margin: 6px 40px;
+      }
+
+    .header-nav{
+        overflow: hidden;
+    }
+    .header-list> ul {
+        visibility: hidden;
+    }
+    
+    .header-content{
+        margin: 0;
+    }
+    .header-nav{
+        padding: 20px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        text-align: left;
+    }
+    .header-background{
+        background-image: url(assets/Desktop_Backgrounds_1920x1200_6\ 3.png);
+        background-size: cover;
+        background-position: right;
+        margin: 0 auto;
+        color: #ffffff;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .main-middle{
+        min-height: 100vh;
+    }
+
+    .main-footer{
+        height: 100vh;
+    }
+
+    .footer-content{
+        display: grid;
+        grid-template-rows: 5;
+    }
+
+    #stars{
+        position: absolute;
+        right: 32px;
+        top: 20px;
+        width:850px;
+        animation: dots 4s infinite alternate;
+    }   
+    @keyframes dots{
+        0% {
+            transform: translateX(0) scale(1.0);
+        }
+        100% {
+            transform: translateX(-40px) scale(1.1);
+        }
+    }
+    #rays{
+        position: absolute;
+        top: 80px;
+        right: 5px;
+        width: 525px;
+        animation: blink 4s infinite alternate;
+    }
+    @keyframes blink{
+        0%{
+            opacity: 100%;
+        }
+    
+        100%{
+            opacity: 0%;
+        }
+    }
+}
