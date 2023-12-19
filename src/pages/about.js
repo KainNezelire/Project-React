@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const About = () => (
     <div className='bg-sky-950'>
     <div className="flex flex-row justify-center gap-20 p-40">
